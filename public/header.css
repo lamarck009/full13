@@ -1,0 +1,110 @@
+:root {
+  --header-height: 56px;
+  --primary-color: dodgerblue;
+}
+
+body {
+  margin: 0; /* 브라우저 기본 body 마진 제거 */}
+
+#container-header-under{
+    margin-top: var(--header-height);
+
+    display: flex;
+}
+
+#main-container{
+  width: calc(100vw - var(--nav-width-collapsed)); /* 기본 상태 */
+  height: 100%;
+}
+
+#video-section-container {
+  padding: 0 24px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#sidenav{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+#section-bar{
+  position: fixed;
+  top: var(--items-per-row);
+  background-color: white;
+  width: 100%;
+
+}
+
+#head-item-left-youtubeicon{
+  margin-left: 20px;
+}
+
+#headercontainer01{
+position: fixed;
+top: 0;
+height: var(--header-height);
+display: flex;
+width: 100%;
+justify-content: space-between;
+align-items: center;
+background-color:white;
+}
+
+
+[class^="head-item-cursor"]{
+  cursor: pointer;
+}
+.kr-icon{
+  display: flex;
+  justify-items: flex-start; 
+  justify-content: flex-start;
+  height: 100%;
+}
+
+
+.head-left-container{
+  margin-left: 20px;
+  justify-content: flex-start;
+}
+.head-middle-container{
+  justify-content: center;
+}
+.head-right-container{
+  margin-right: 20px;
+  justify-content: flex-end;
+  padding-left: 10px;
+    padding-right: 10px;
+}
+
+.head-right-profile-image img{
+  height: 32px;
+  border-radius: 50%; /* 원형 만들기 */
+  object-fit: cover; /* 이미지 비율 유지 및 요소에 꽉 채우기 */
+  border: 3px solid white; /* 선택 사항: 흰색 테두리 추가 */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* 선택 사항: 그림자 효과 추가 */
+}
+
+[class*="head-"] {
+    height: fit-content;
+    display: flex;    
+  }
+
+    
+    .rounded-input-text {
+      border-radius: 20px 0 0 20px; /* 왼쪽 상단, 오른쪽 상단, 오른쪽 하단, 왼쪽 하단 순서 */
+      width: 30vw;
+      padding: 0 10px;
+      border: 1px solid #ccc;
+    }
+
+    .search-button {
+      border-radius: 0px 20px 20px 0px; /* 왼쪽 상단, 오른쪽 상단, 오른쪽 하단, 왼쪽 하단 순서 */
+  width: 50px;
+  
+      border: 1px solid #f8f8f8;
+    }
+      
+    
